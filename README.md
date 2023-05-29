@@ -27,10 +27,7 @@ The code consists of three main parts: the HTML template, the CSS style sheet an
 
 ## Installation and Usage
 
-To use Tom's Translator, you need to have Python 3 and pip installed on your system. You also need to get a Google Cloud API key and enable
-
-nstallation and Usage
-To use Tom’s Translator, you need to have Python 3 and pip installed on your system. You also need to get a Google Cloud API key and enable the Google Translate API for your project. Follow these steps to install and run the app:
+To use Tom's Translator, you need to have Python 3 and pip installed on your system. You also need to get a Google Translate API.
 
 Clone this repository or download the zip file. 📥
 Navigate to the project directory and create a virtual environment: python3 -m venv venv 🗂️
