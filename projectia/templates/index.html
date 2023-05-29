@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tom's Translator</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <h1>Lingua Franca</h1>
+  <div class="container">
+    <form method="POST">
+      <div>
+        <select id="language1" name="src_lang">
+          {% for key, value in languages.items() %}
+            <option value="{{ key }}">{{ value }}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <textarea id="textarea1" class="input-field" name="text"></textarea>
+      <div style="text-align:center">
+        <input type="submit" name="btnSubmit" value="Translate" onClick="Submit">
+      </div>
+      <div>
+        <select id="language2" name="dest_lang">
+          {% for key, value in languages.items() %}
+            <option value="{{ key }}">{{ value }}</option>
+          {% endfor %}
+        </select>
+      </div> 
+      <textarea id="textarea2" class="input-field">{{ translated_text }}</textarea> 
+    </form> 
+  </div> 
+  <div class="footer">
+    <p>Coded by Tom FHAL</p>
+    <a href="https://www.linkedin.com/in/tom-fhal-551566228/">Linkedin</a>
+    <a href="https://github.com/tom-fhal">Github</a>
+  </div> 
+</body>
+</html>
